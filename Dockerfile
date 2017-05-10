@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 RUN apt-get update
 
-RUN apt-get install -y supervisor build-essential g++ curl libssl-dev apache2-utils git libxml2-dev sshfs libx11-dev libxft-dev fontconfig libcairo2-dev gcc automake git cmake flex bison ctags libpam-cracklib
+RUN apt-get install -y supervisor build-essential clang g++ curl libssl-dev apache2-utils git libxml2-dev sshfs libx11-dev libxft-dev fontconfig libcairo2-dev gcc automake git cmake flex bison ctags libpam-cracklib
 RUN apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
 
